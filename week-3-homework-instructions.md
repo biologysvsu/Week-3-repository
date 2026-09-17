@@ -12,7 +12,17 @@
   ```bash
   cd /ocean/projects/bio260081p/your-psc-username
   ```
-
+- Make a new folder named "blasttest" and cd into that folder:
+  ```bash
+  mkdir blasttest
+  cd blasttest
+  ```
+- Make it a habit to check you are in the right folder by typing pwd:
+  ```bash
+  pwd
+  ```
+-Output should look like:
+`/ocean/projects/bio260081p/your-psc-username/blasttest`
 ## MAKE SURE YOU HAVE DOWNLOADED THE SUBJECT FILE -- THE HUMAN GENOME
 - List your directory contents (`ls`). You should have `GCF_000001405.40_GRCh38.p14_genomic.fna.gz` if you followed the instructions in class. Some of you should also have the partial `SRR741411_2.fastq.gz, we will ignore this file from now on.
   ```bash
@@ -21,7 +31,6 @@
   Expected output:
   ```
   GCF_000001405.40_GRCh38.p14_genomic.fna.gz
-  SRR741411_2.fastq.gz
   ```
 - **(OPTIONAL)** If you do not have the human genome file in your directory, download it using `wget`:
   ```bash
@@ -49,9 +58,9 @@
   ```
 
 ## MOVE THE QUERY FILE FROM THE SHARED DIRECTORY TO YOUR PERSONAL STORAGE FOLDER
-- Copy the unknown query DNA file to your directory. You were assigned one of five unknown files labeled `unk1 - unk5`:
+- Copy your assigned unknown query DNA file to your working directory. You were assigned one of four unknown files: unk1.fasta, unk2.fasta, unk3.fasta, or unk4.fasta. Dont forget to replace 1 with 2, 3, or 4, depending on the unknown file assigned to you.
   ```bash
-  cp ../shared/week-3-data/human-genome/your-unk-file.fasta .
+  cp ~/your-week3-repository-cloned/unk1.fasta .
   ```
 - List your directory contents to confirm the file was copied successfully:
   ```bash
@@ -60,7 +69,7 @@
   Expected output:
   ```
   GCF_000001405.40_GRCh38.p14_genomic.fna
-  your-unk.fasta
+  unk*.fasta
   ```
 
 ## IT IS TIME TO BLAST
@@ -69,7 +78,7 @@
   ```bash
   module load BLAST
   ```
-### Build a BLAST Database
+### Build a BLAST Database (If you already created the BLAST database in class, you do not need to create it again.)
 - Use the decompressed human genome file to create a local database:
   ```bash
   makeblastdb -in GCF_000001405.40_GRCh38.p14_genomic.fna -dbtype nucl -out human_genome_db
