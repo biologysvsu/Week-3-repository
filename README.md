@@ -16,11 +16,11 @@
   (The `~` symbol, called tilde, represents your home directory.)
 
 ## 2. Shared Storage Directory (Class & Tutorial Data)
-**Path:** `/ocean/projects/agr250001p/shared`
+**Path:** `/ocean/projects/bio260081p/shared`
 - This is a shared space where class materials and datasets will be stored.
 
 ## 3. Your Personal Storage Folder (Large Files)
-**Path:** `/ocean/projects/agr250001p/your-psc-username`
+**Path:** `/ocean/projects/bio260081p/your-psc-username`
 - Use this directory for storing large files that do not fit in your home directory.
 
 ---
@@ -32,8 +32,8 @@ Since `my_quota` did not work, use these commands instead:
 | **Directory**          | **Command**                                      | **Purpose** |
 |------------------------|--------------------------------------------------|------------|
 | Home Directory         | `df -h ~`                                        | Check your personal space usage. |
-| Personal Storage       | `df -h /ocean/projects/agr250001p/your-psc-username` | See how much space is left in your storage folder. |
-| Shared Storage         | `df -h /ocean/projects/agr250001p/shared`        | Check how much space remains in the shared class folder. |
+| Personal Storage       | `df -h /ocean/projects/bio260081p/your-psc-username` | See how much space is left in your storage folder. |
+| Shared Storage         | `df -h /ocean/projects/bio260081p/shared`        | Check how much space remains in the shared class folder. |
 
 ---
 
