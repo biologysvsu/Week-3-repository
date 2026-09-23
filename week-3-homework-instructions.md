@@ -73,6 +73,10 @@
   ```
 
 ## IT IS TIME TO BLAST
+### Get computational resources and work manually in real time (the automated/batch version uses sbatch) by typing:
+```bash
+interact
+```
 ### Load the required software
 - Load the BLAST software:
   ```bash
