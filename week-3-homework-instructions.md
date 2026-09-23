@@ -113,7 +113,7 @@ blastn -task megablast -query your-unk.fasta -db human_genome_db -out results.tx
 ```
 
 ### This command:
-- Takes the query file (`unk.fasta`) – replace this with your assigned unknown file name.
+- Takes the query file (`your-unk.fasta`) – replace this with your assigned unknown file name.
 - Creates a file called `results.txt` containing the BLAST results.
 - Uses output format #6, which provides a tab-separated table with the following headers:
 
