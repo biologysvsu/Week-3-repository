@@ -60,7 +60,7 @@
 ## MOVE THE QUERY FILE FROM THE SHARED DIRECTORY TO YOUR PERSONAL STORAGE FOLDER
 - Copy your assigned unknown query DNA file to your working directory. You were assigned one of four unknown files: unk1.fasta, unk2.fasta, unk3.fasta, or unk4.fasta. Dont forget to replace 1 with 2, 3, or 4, depending on the unknown file assigned to you.
   ```bash
-  cp ~/your-week3-repository-cloned/unk1.fasta .
+  cp /ocean/projects/bio260081p/shared/unk1.fasta .
   ```
 - List your directory contents to confirm the file was copied successfully:
   ```bash
