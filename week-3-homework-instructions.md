@@ -106,10 +106,10 @@ interact -p RM-shared --ntasks-per-node=8 -t 01:00:00
 
 ## Run the BLAST Search
 
-Execute the BLAST search using the query sequence and the human genome database:
+Execute the BLAST search using your assigned query sequence and the human genome database. Make sure to replace the query file name with your assigned sequence (unk1–unk4).
 
 ```bash
-blastn -task megablast -query unk1.fasta -db human_genome_db -out results.txt -num_threads 8 -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore stitle"
+blastn -task megablast -query your-unk.fasta -db human_genome_db -out results.txt -num_threads 8 -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore stitle"
 ```
 
 ### This command:
