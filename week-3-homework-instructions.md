@@ -75,7 +75,7 @@
 ## IT IS TIME TO BLAST
 ### Get computational resources and work manually in real time (the automated/batch version uses sbatch) by typing:
 ```bash
-interact
+interact -p RM-shared --ntasks-per-node=8 -t 01:00:00
 ```
 ### Load the required software
 - Load the BLAST software:
@@ -109,7 +109,7 @@ interact
 Execute the BLAST search using the query sequence and the human genome database:
 
 ```bash
-blastn -query your-unk.fasta -db human_genome_db -out results.txt -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore stitle"
+blastn -task megablast -query unk4.fasta -db human_genome_db -out results.txt -num_threads 8 -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore stitle"
 ```
 
 ### This command:
